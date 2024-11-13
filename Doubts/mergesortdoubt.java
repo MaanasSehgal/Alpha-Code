@@ -11,7 +11,7 @@ public class mergesortdoubt {
 
         mergeSort(arr, si, mid);
         mergeSort(arr, mid + 1, ei);
-        System.out.println(Arrays.toString(arr));
+        merge(arr, si, mid, ei);
     }
 
     public static void merge(int arr[], int si, int mid, int ei) {
@@ -47,6 +47,6 @@ public class mergesortdoubt {
     public static void main(String[] args) {
         int arr[] = { 5, 4, 1, 3, 2 };
         mergeSort(arr, 0, arr.length - 1);
-        Arrays.toString(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
